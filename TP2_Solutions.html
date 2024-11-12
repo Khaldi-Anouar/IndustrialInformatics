@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Exercise Solutions - TP 2</title>
+    <style>
+        .code-box {
+            background-color: #f0f0f0;
+            border: 1px solid #000;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h2>Solution of Exercise 1</h2>
+    <div class="code-box">
+        # Asking the user to input a number<br>
+        number = float(input("Enter a number: "))<br><br>
+
+        # Checking if the number is positive, zero, or negative<br>
+        if number > 0:<br>
+        &emsp;print("The number is positive")<br>
+        elif number == 0:<br>
+        &emsp;print("The number is zero")<br>
+        else:<br>
+        &emsp;print("The number is negative")
+    </div>
+
+    <h2>Solution of Exercise 2</h2>
+    <div class="code-box">
+        # Asking the user for the price of a product<br>
+        price = float(input("Enter the price of the product: "))<br>
+        has_discount = input("Has discount? (True/False): ")<br><br>
+
+        # Applying a discount if the user has a discount coupon<br>
+        if has_discount.lower() == "true":<br>
+        &emsp;discounted_price = price * 0.9<br>
+        &emsp;print("Discounted price:", discounted_price)<br>
+        else:<br>
+        &emsp;print("Original price:", price)
+    </div>
+
+    <h2>Solution of Exercise 3</h2>
+    <div class="code-box">
+        # Asking the user for the lengths of the three sides of a triangle<br>
+        side1 = float(input("Enter the length of side 1: "))<br>
+        side2 = float(input("Enter the length of side 2: "))<br>
+        side3 = float(input("Enter the length of side 3: "))<br><br>
+
+        # Determining the type of triangle<br>
+        if side1 == side2 == side3:<br>
+        &emsp;print("Equilateral triangle")<br>
+        elif side1 == side2 or side2 == side3 or side1 == side3:<br>
+        &emsp;print("Isosceles triangle")<br>
+        else:<br>
+        &emsp;print("Scalene triangle")
+    </div>
+
+    <h2>Solution of Exercise 4</h2>
+    <div class="code-box">
+        # Asking the user to input three numbers<br>
+        num1 = float(input("Enter number 1: "))<br>
+        num2 = float(input("Enter number 2: "))<br>
+        num3 = float(input("Enter number 3: "))<br><br>
+
+        # Determining the largest number using if-elif-else<br>
+        if num1 >= num2 and num1 >= num3:<br>
+        &emsp;print("The largest number is:", num1)<br>
+        elif num2 >= num1 and num2 >= num3:<br>
+        &emsp;print("The largest number is:", num2)<br>
+        else:<br>
+        &emsp;print("The largest number is:", num3)
+    </div>
+</body>
+</html>
