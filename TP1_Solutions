@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Exercise Solutions</title>
+    <style>
+        .code-box {
+            background-color: #f0f0f0;
+            border: 1px solid #000;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-family: monospace;
+            /* white-space: pre-wrap; */
+        }
+    </style>
+</head>
+<body>
+    <h2>Solution of Exercise 1</h2>
+    <div class="code-box">
+        # Asking the user for their name<br>
+        user_name = input("What is your name?")<br><br>
+
+        # Printing a greeting message<br>
+        print("Hello,", user_name + "!")
+    </div>
+
+    <h2>Solution of Exercise 2</h2>
+    <div class="code-box">
+        # Asking for the base and height of the triangle<br>
+        base = float(input("Enter the base of the triangle: "))<br>
+        height = float(input("Enter the height of the triangle: "))<br><br>
+
+        # Calculating the area of the triangle<br>
+        area = 0.5 * base * height<br><br>
+
+        # Printing the area<br>
+        print("The area of the triangle is:", area)
+    </div>
+
+    <h2>Solution of Exercise 3</h2>
+    <div class="code-box">
+        # Asking the user for a temperature in Celsius<br>
+        celsius = float(input("Enter temperature in Celsius: "))<br><br>
+
+        # Converting Celsius to Fahrenheit<br>
+        fahrenheit = (celsius * 9/5) + 32<br><br>
+
+        # Printing the temperature in Fahrenheit<br>
+        print("The temperature in Fahrenheit is:", fahrenheit)
+    </div>
+
+    <h2>Solution of Exercise 4</h2>
+    <div class="code-box">
+        # Asking the user for a sentence<br>
+        sentence = input("Enter a sentence: ")<br><br>
+
+        # Extracting the first word of the sentence<br>
+        first_word = sentence.split()[0]<br><br>
+
+        # Calculating the length of the first word<br>
+        length_of_first_word = len(first_word)<br><br>
+
+        # Printing the information<br>
+        print("Original sentence:", sentence)<br>
+        print("First word:", first_word)<br>
+        print("Length of the first word:", length_of_first_word)
+    </div>
+</body>
+</html>
